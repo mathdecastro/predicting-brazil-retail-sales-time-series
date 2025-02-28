@@ -8,9 +8,9 @@ Analyzing the plot of the series, we can easily visualize that it has a seasonal
 ######
 #### 2. Testing the equality of variances with the Levene's test
 Even though the series seems to have a constant variance, we still should do the Levene's test to check the variance equality through the series.
-- **$$H_{0}: \theta_{0}^{2}=\theta_{1}^{2}=...=\theta_{k}^{2},$$**
+- **$$H_{0}: \theta_{0}^{2}=\theta_{1}^{2}=...=\theta_{k}^{2}$$,**
 - **$$H_{1}: \theta_{i}^{2}\neq\theta_{j}^{2}$$ for at least one pair $$(i,j)$$.**
 ######
-Testing the hypothesis for $$k=2$$, it resulted in a p-value of **$$0.6758$$**. It means that we didn't find evidences that the variances of the two groups are different from each other.
+Testing the hypothesis for $$k=2$$ (dividing the series in half), it resulted in a p-value of **$$0.6758$$**. It means that we didn't find evidences that the variances of the two groups are different from each other.
 ######
 #### 3. Analyzing the ACF and PACF plots
