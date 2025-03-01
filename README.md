@@ -4,7 +4,7 @@ In this work, i'll analyze the retail trade sales in brazil from **2012** to **2
 #### 1. Taking a look at the time series
 ![alt text](images/image1.jpeg)
 ######
-Analyzing the plot of the series, we can easily visualize that it has a seasonality. It's also indicating to us that we may choose a SARIMA model.
+Analyzing the plot of the series, we can easily visualize that it has a seasonality.
 ######
 #### 2. Testing the equality of variances with the Levene's test
 Even though the series seems to have a constant variance, we still should do the Levene's test to check the variance equality through the series.
@@ -14,3 +14,9 @@ Even though the series seems to have a constant variance, we still should do the
 Testing the hypothesis for $$k=2$$ (dividing the series in half), it resulted in a p-value of **$$0.6758$$**. It means that we didn't find evidences that the variances of the two groups are different from each other.
 ######
 #### 3. Analyzing the ACF and PACF plots
+![alt text](images/image2.jpeg)
+![alt text](images/image3.jpeg)
+######
+The ACF and PACF plottings are indicating to us that we may choose one of the models below:
+- AR $$(1)_{12}$$;
+- SARIMA $$(0,0,0)(1,1,0)_{12}$$.
