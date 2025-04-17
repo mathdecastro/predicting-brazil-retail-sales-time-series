@@ -40,7 +40,7 @@ The plottings are indicating to us that we may choose one of the models below:
 - SARIMA $$(1,1,1)(0,1,0)_{12}$$,
 - SARIMA $$(1,1,1)(1,1,0)_{12}$$.
 ######
-Talking about the models selected, since both ACF and PACF are truncated in lag 12, we should test models with P = 1 only, Q = 1 only and one with the combination of both P = 1 and Q = 1. The models with p = 1 and q = 1 are in the list just because it's complex to really identify them, so we are testing to see if they can have better results than the models with p = 0 and q = 0.
+Talking about the models selected, since both ACF and PACF are truncated in lag 12, we should test models with P = 1 only, Q = 1 only and one with the combination of both P = 1 and Q = 1. The models with p = 1 and q = 1 are on the list because it seems like the first lags of ACF and PACF are significant.
 ######
 #### 5. Choosing the model.
 ######
