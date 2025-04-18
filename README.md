@@ -17,7 +17,7 @@ Testing the hypothesis for $$k=2$$ (dividing the series in half), it resulted in
 ![alt text](images/image2.jpeg)
 ![alt text](images/image3.jpeg)
 ######
-#### 4. Trying to figure out the parameters.
+#### 4. Trying to figure out the parameters
 ######
 To get rid of the seasonality peaks we can take one difference of the seasonality part (D = 1).
 ######
@@ -37,10 +37,16 @@ The plottings are indicating to us that we may choose one of the models below:
 - SARIMA $$(0,1,0)(0,1,1)_{12}$$,
 - SARIMA $$(0,1,0)(1,1,1)_{12}$$,
 - SARIMA $$(1,1,1)(1,1,0)_{12}$$,
-- SARIMA $$(1,1,1)(0,1,0)_{12}$$,
-- SARIMA $$(1,1,1)(1,1,0)_{12}$$.
+- SARIMA $$(1,1,1)(0,1,1)_{12}$$,
+- SARIMA $$(1,1,1)(1,1,1)_{12}$$,
+- SARIMA $$(1,1,0)(1,1,0)_{12}$$,
+- SARIMA $$(1,1,0)(0,1,1)_{12}$$,
+- SARIMA $$(1,1,0)(1,1,1)_{12}$$,
+- SARIMA $$(0,1,1)(1,1,0)_{12}$$,
+- SARIMA $$(0,1,1)(0,1,1)_{12}$$,
+- SARIMA $$(0,1,1)(1,1,1)_{12}$$.
 ######
-Talking about the models selected, since both ACF and PACF are truncated in lag 12, we should test models with P = 1 only, Q = 1 only and one with the combination of both P = 1 and Q = 1. The models with p = 1 and q = 1 are on the list because it seems like the first lags of ACF and PACF are significant.
+Talking about the models selected, since both ACF and PACF are truncated in lag 12, we should test models with P = 1 only, Q = 1 only and one with the combination of both P = 1 and Q = 1. The models with p = 1 and q = 1 are on the list because it seems like the first lags of ACF and PACF are significant, so we're trying all the combinations.
 ######
-#### 5. Choosing the model.
+#### 5. Comparing the models
 ######
