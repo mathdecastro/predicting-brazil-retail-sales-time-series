@@ -33,20 +33,36 @@ Now with the series stabilised, let's take a look on the resulted ACF and PACF p
 ![alt text](images/image7.jpeg)
 ######
 The plottings are indicating to us that we may choose one of the models below:
-- SARIMA $$(0,1,0)(1,1,0)_{12}$$,
-- SARIMA $$(0,1,0)(0,1,1)_{12}$$,
-- SARIMA $$(0,1,0)(1,1,1)_{12}$$,
-- SARIMA $$(1,1,1)(1,1,0)_{12}$$,
-- SARIMA $$(1,1,1)(0,1,1)_{12}$$,
-- SARIMA $$(1,1,1)(1,1,1)_{12}$$,
-- SARIMA $$(1,1,0)(1,1,0)_{12}$$,
-- SARIMA $$(1,1,0)(0,1,1)_{12}$$,
-- SARIMA $$(1,1,0)(1,1,1)_{12}$$,
-- SARIMA $$(0,1,1)(1,1,0)_{12}$$,
-- SARIMA $$(0,1,1)(0,1,1)_{12}$$,
-- SARIMA $$(0,1,1)(1,1,1)_{12}$$.
+- $$Model_{1}$$: SARIMA $$(0,1,0)(1,1,0)_{12}$$,
+- $$Model_{2}$$: SARIMA $$(0,1,0)(0,1,1)_{12}$$,
+- $$Model_{3}$$: SARIMA $$(0,1,0)(1,1,1)_{12}$$,
+- $$Model_{4}$$: SARIMA $$(1,1,1)(1,1,0)_{12}$$,
+- $$Model_{5}$$: SARIMA $$(1,1,1)(0,1,1)_{12}$$,
+- $$Model_{6}$$: SARIMA $$(1,1,1)(1,1,1)_{12}$$,
+- $$Model_{7}$$: SARIMA $$(1,1,0)(1,1,0)_{12}$$,
+- $$Model_{8}$$: SARIMA $$(1,1,0)(0,1,1)_{12}$$,
+- $$Model_{9}$$: SARIMA $$(1,1,0)(1,1,1)_{12}$$,
+- $$Model_{10}$$: SARIMA $$(0,1,1)(1,1,0)_{12}$$,
+- $$Model_{11}$$: SARIMA $$(0,1,1)(0,1,1)_{12}$$,
+- $$Model_{12}$$: SARIMA $$(0,1,1)(1,1,1)_{12}$$.
 ######
-Talking about the models selected, since both ACF and PACF are truncated in lag 12, we should test models with P = 1 only, Q = 1 only and one with the combination of both P = 1 and Q = 1. The models with p = 1 and q = 1 are on the list because it seems like the first lags of ACF and PACF are significant, so we're trying all the combinations.
+Talking about the models selected, since both ACF and PACF are truncated in lag 12, we should test models with all the combinations of P = 1 and Q = 1. The models with p = 1 and q = 1 are on the list because it seems like the first lags of ACF and PACF are significant, so we're trying all the combinations of it too.
 ######
 #### 5. Comparing the models
 ######
+![alt text](images/image8.jpeg)
+######
+| Model | AIC | BIC |
+| --- | --- | --- |
+| $$Model_{1}$$ | 640.90 | 646.46 |
+| $$Model_{2}$$ | 631.41 | 636.97 |
+| $$Model_{3}$$ | 633.21 | 641.55 |
+| $$Model_{4}$$ | 634.32 | 645.44 |
+| $$Model_{5}$$ | 622.65 | 633.77 |  
+| $$Model_{6}$$ | 623.33 | 637.23 |
+| $$Model_{7}$$ | 641.17 | 649.50 |
+| $$Model_{8}$$ | 629.68 | 638.02 |
+| $$Model_{9}$$ | 631.18 | 642.30 |
+| $$Model_{10}$$ | 640.52 | 648.85 |
+| $$Model_{11}$$ | 628.40 | 636.74 |
+| $$Model_{12}$$ | 629.69 | 640.81 |
