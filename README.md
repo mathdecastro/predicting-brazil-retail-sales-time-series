@@ -50,7 +50,13 @@ Talking about the models selected, since both ACF and PACF are truncated in lag 
 ######
 #### 5. Comparing the models
 ######
+The first thing we can do to compare the models is to do the Ljung-Box test for each model. With that, we can assure the model's residuals independence, but before that we need to know where the lags of the ACF for each model's residuals crosses the lines of statistical significance.
+######
 ![alt text](images/image8.jpeg)
+######
+
+- **$$H_{0}$$: The model doesn't exhibit lack of fit,**
+- **$$H_{1}$$: The model exhibits lack of fit.**
 ######
 | Model | AIC | BIC |
 | --- | --- | --- |
