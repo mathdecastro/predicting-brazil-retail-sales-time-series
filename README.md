@@ -50,11 +50,16 @@ Talking about the models selected, since both ACF and PACF are truncated in lag 
 ######
 #### 5. Comparing the models
 ######
+Before comparing the models, we should know if the residuals of the models are, approximately, normally distributed. We can do this by looking at the Histogram, Density an Q-Q plots.
+######
+![alt text](images/image9.jpeg)
+######
+The Histogram and Density plots are indicating to us that the residuals of the models are approximately normally distributed. We could've done the Shapiro-Wilk's test to analyze if the residuals are normally distributed, but i choose not to do this test due to the fact that it is highly sensitive to small deviations from normal distribution in large samples.
+######
 The first thing we can do to compare the models is to do the Ljung-Box test for each model. With that, we can assure the model's residuals independence, but before that we need to know where the lags of the ACF for each model's residuals crosses the lines of statistical significance.
 ######
 ![alt text](images/image8.jpeg)
 ######
-
 - **$$H_{0}$$: The model doesn't exhibit lack of fit,**
 - **$$H_{1}$$: The model exhibits lack of fit.**
 ######
