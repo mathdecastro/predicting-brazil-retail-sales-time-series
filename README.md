@@ -54,14 +54,21 @@ Before comparing the models, we should know if the residuals of the models are, 
 ######
 ![alt text](images/image9.jpeg)
 ######
-The Histogram and Density plots are indicating to us that the residuals of the models are approximately normally distributed. We could've done the Shapiro-Wilk's test to analyze if the residuals are normally distributed, but i choose not to do this test due to the fact that it is highly sensitive to small deviations from normal distribution in large samples.
+The Histogram and Density plots are indicating to us that the residuals of the models are approximately normally distributed. We could've done the Shapiro-Wilk's test to analyze if the residuals are normally distributed, but i choose not to do this test due to the fact that it is highly sensitive to small deviations from normal distribution in large samples. Now, let's take a look at the Normal Q-Q Plots.
+######
+![alt text](images/image10.jpeg)
+######
+We can visualize in the plots that the data points are very close to the normal line, with some differences in one or another model. Because of these Normal Q-Q plots and the histogram plots, we can consider that the residuals of the models are normally distributed.
 ######
 The first thing we can do to compare the models is to do the Ljung-Box test for each model. With that, we can assure the model's residuals independence, but before that we need to know where the lags of the ACF for each model's residuals crosses the lines of statistical significance.
 ######
 ![alt text](images/image8.jpeg)
 ######
+The hypothesis of the Ljung-Box test are defined as:
 - **$$H_{0}$$: The model doesn't exhibit lack of fit,**
 - **$$H_{1}$$: The model exhibits lack of fit.**
+######
+Testing for the lags that crossed the line in each model, we have the resulted p-values:
 ######
 | Model | AIC | BIC |
 | --- | --- | --- |
