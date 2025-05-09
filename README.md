@@ -68,7 +68,10 @@ The hypothesis of the Ljung-Box test are defined as:
 - **$$H_{0}$$: The model doesn't exhibit lack of fit,**
 - **$$H_{1}$$: The model exhibits lack of fit.**
 ######
-Testing for the lags that crossed the line in each model, we have the resulted p-values:
+Since it's difficult to actually know if the ACF did or didn't cross the line because the points are very close to the line, we can make a graph of all the resulted p-values for the first 50 lags for each model. Calculating the p-values, we have the this graph:
+######
+![alt text](images/image11.jpeg)
+######
 ######
 | Model | AIC | BIC |
 | --- | --- | --- |
