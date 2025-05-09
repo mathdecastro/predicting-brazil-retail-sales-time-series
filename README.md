@@ -64,26 +64,18 @@ The first thing we can do to compare the models is to do the Ljung-Box test for 
 ######
 ![alt text](images/image8.jpeg)
 ######
+Since it's difficult to actually know if the ACF did or didn't cross the line because some of the points are very close to the line, we can make a graph of all the resulted p-values for the first 50 lags for each model. Calculating the p-values, we have the this graph:
+######
+![alt text](images/image11.jpeg)
+######
 The hypothesis of the Ljung-Box test are defined as:
 - **$$H_{0}$$: The model doesn't exhibit lack of fit,**
 - **$$H_{1}$$: The model exhibits lack of fit.**
 ######
-Since it's difficult to actually know if the ACF did or didn't cross the line because the points are very close to the line, we can make a graph of all the resulted p-values for the first 50 lags for each model. Calculating the p-values, we have the this graph:
-######
-![alt text](images/image11.jpeg)
-######
+In this graph, if the resulted p-value is less than 0.05, then the square is in red. It looks like the models with p = 1 and q = 1 (model 4, model 5 and model 6) are the only ones that the null hypothesis didn't get rejected, it means that we didn't find evidences that these models exhibit lack of fit. So because of that, we can continue our comparison of models only with them.
 ######
 | Model | AIC | BIC |
 | --- | --- | --- |
-| $$Model_{1}$$ | 640.90 | 646.46 |
-| $$Model_{2}$$ | 631.41 | 636.97 |
-| $$Model_{3}$$ | 633.21 | 641.55 |
 | $$Model_{4}$$ | 634.32 | 645.44 |
 | $$Model_{5}$$ | 622.65 | 633.77 |  
 | $$Model_{6}$$ | 623.33 | 637.23 |
-| $$Model_{7}$$ | 641.17 | 649.50 |
-| $$Model_{8}$$ | 629.68 | 638.02 |
-| $$Model_{9}$$ | 631.18 | 642.30 |
-| $$Model_{10}$$ | 640.52 | 648.85 |
-| $$Model_{11}$$ | 628.40 | 636.74 |
-| $$Model_{12}$$ | 629.69 | 640.81 |
