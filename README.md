@@ -79,3 +79,5 @@ In this graph, if the resulted p-value is less than 0.05, then the square is in 
 | $$Model_{4}$$ | 634.32 | 645.44 |
 | $$Model_{5}$$ | 622.65 | 633.77 |  
 | $$Model_{6}$$ | 623.33 | 637.23 |
+######
+![alt text](images/image12.png)
