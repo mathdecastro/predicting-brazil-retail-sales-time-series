@@ -1,4 +1,4 @@
-# Forecasting Brazil's retail trade sales time series in R
+# Time series forecasting of 2023 Brazil's retail trade sales using R
 In this work, i'll analyze the retail trade sales in brazil from **2012** to **2022** and try to choose the best statistical model to forecast 2023 sales. As a convention, for the hypothesis testing, i'll set the significance level in 5%.
 ####
 #### 1. Taking a look at the time series
