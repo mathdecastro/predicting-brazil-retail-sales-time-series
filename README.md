@@ -1,10 +1,10 @@
-# Predicting Brazil's retail trade sales time series in R
-In this work, i'll analyze the retail trade sales in brazil from **2012** to **2022** and choose the best fit model to predict 2023 sales.
+# Forecasting Brazil's retail trade sales time series in R
+In this work, i'll analyze the retail trade sales in brazil from **2012** to **2022** and try to choose the best statistical model to forecast 2023 sales. As a convention, for the hypothesis testing, i'll set the significance level in 5%.
 ####
 #### 1. Taking a look at the time series
 ![alt text](images/image1.jpeg)
 ######
-Analyzing the plot of the series, we can easily visualize that it has a seasonality (S = 12). Then we can try a SARIMA $$(p,d,q)(P,D,Q)_{S}$$ model in this case.
+Analyzing the plot of the series, we can easily visualize that it has a seasonality of 12 months (S = 12) and looks like it doesn't have a trend. Then we can try a SARIMA $$(p,d,q)(P,D,Q)_{S}$$ model in this case.
 ######
 #### 2. Testing the equality of variances with the Levene's test
 Even though the series seems to have a constant variance, we still should do the Levene's test to check the variance equality through the series.
